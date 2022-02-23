@@ -7,8 +7,19 @@
 
 <script>
 // import Menu from '@/components/Menu.vue'
+import { onMounted } from "vue";
+import { auth } from "./utils/firebase";
 export default {
-  name:'App'
+  name:'App',
+  setup() {
+    onMounted(() => {
+      auth.onAuthStateChanged((user) => {
+        if(user) {
+          console.log(user)
+        }
+      })
+    })
+  }
 }
 </script>
 

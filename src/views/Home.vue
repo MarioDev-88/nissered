@@ -1,6 +1,9 @@
 <template>
-  <section class="banner-section">
-    <div class="banner-carousel owl-theme owl-carousel owl-loaded owl-drag">
+  <main>
+    <div class="h-screen w-full">
+      <div class="shadow-lg h-screen bg-inicio-pattern flex bg-center bg-cover bg-no-repeat"></div>      
+    </div>
+    <!-- <div class="banner-carousel owl-theme owl-carousel owl-loaded owl-drag">
       <agile :autoplay="false" :centerMode="true" :fade="true" :navButtons="false" @after-change="showCurrentSlide($event)">
         <div class="owl-item">
           <div class="slide slide-item">
@@ -27,8 +30,8 @@
       <div class="trans">
         <h1>Hola</h1>
       </div>
-    </vue-aos>
-  </section>
+    </vue-aos> -->
+  </main>
   <!-- <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
@@ -36,24 +39,24 @@
 </template>
 
 <script>
-import { VueAgile } from 'vue-agile'
+// import { VueAgile } from 'vue-agile'
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   components: {
-    agile:VueAgile
+    // agile:VueAgile
   },
   methods: {
-    showCurrentSlide(event) {
-      console.log(event)
-    }
+    // showCurrentSlide(event) {
+    //   console.log(event)
+    // }
   }
 }
 </script>
 
 <style scoped>
-.trans {
+/* .trans {
     opacity: 1;
      -webkit-transform: translateX(0);
      -moz-transform: translateX(0);
@@ -70,5 +73,5 @@ export default {
      -ms-transition-delay: 300ms;
      -o-transition-delay: 300ms;
      transition-delay: 300ms;
-}
+} */
 </style>
